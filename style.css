@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9eaea;
+    overflow: hidden;
+}
+
+.container {
+    width: 500px;
+    margin: 70px auto;
+    border-left: 1px solid rgba(195, 194, 194, 0.755);
+}
+
+.container .signin {
+    border-top: 2px solid #34b3a0;
+}
+
+.container .signup {
+    background-color: rgba(222, 222, 222, 1);
+}
+
+.signin, .signup {
+    background-color: #fff;
+    color: #3e3e40;
+    font-weight: bold;
+    width: 50%;
+    height: 60px;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+
+.signin-form, .signup-form {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 40px;
+    clear: both;
+    width: 100%;
+}
+
+i.fa {
+    position: relative;
+    top: 2.3rem;
+    left: 1rem;
+    color: #aaa;
+    font-size: 1.5rem;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 15px 15px 50px;
+    border: 2px solid #e9eaea;
+    border-radius: 9px;
+    color: #3e3e40;
+    font-size: 14px;
+    outline: none;
+    transition: all .5s ease;
+}
+
+.input:focus {
+    border: 2px solid #34b3a0;
+}
+
+
+span {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+    margin: 0 0 2rem;
+    position: relative;
+    top: 1rem;
+}
+
+input[type='checkbox'] {
+    position: relative;
+    top: 0.5rem;
+}
+
+span p {
+    position: absolute;
+    left: 1rem;
+    bottom: 0.1rem;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(112, 111, 111);
+}
+
+span a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.591);
+}
+
+button {
+    width: 100%;
+    background-color: #4caf50;
+    height: 40px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.signup-btn {
+    margin-top: 1rem;
+}
+
+button:hover, button:active {
+    background: #43a047;
+}

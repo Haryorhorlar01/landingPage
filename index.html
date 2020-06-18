@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="signin">sign in</div>
+        <div class="signup">sign up</div>
+
+        <div class="signin-form" id="form-body">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <input type="email" class="input" placeholder="Username or email"><br>
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" class="input" placeholder="Password"><br>
+            <span><input type="checkbox">
+                <p>Remember me</p> <a href="#">Forgot password</a>
+            </span>
+            <button>sign in</button>
+        </div>
+        <div class="signup-form">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="email" class="input" placeholder="Your Email id"><br>
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <input type="text" class="input" placeholder="Choose a Username"><br>
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" class="input" placeholder="Choose a Password"><br>
+            <button class="signup-btn">sign up</button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".signup-form").hide();
+
+            $('.signup').click(function () {
+                $('.signin-form').hide();
+                $('.signup-form').show();
+
+                $('.signin').css('background', 'rgba(222, 222, 222, 1)');
+                $('.signup').css('background', '#fff');
+                $('.signup').css('border-top', '2px solid #34b3a0');
+                $('.signin').css('border-top', 'none')
+
+            });
+
+            $('.signin').click(function () {
+                $('.signup-form').hide();
+                $('.signin-form').show();
+
+                $('.signup').css('background', 'rgba(222, 222, 222, 1)');
+                $('.signin').css('background', '#fff');
+                $('.signin').css('border-top', '2px solid #34b3a0');
+                $('.signup').css('border-top', 'none')
+
+            });
+        });
+    </script>
+</body>
+
+</html>
